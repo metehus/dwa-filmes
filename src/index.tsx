@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './index.css';
 import App from './App';
 import { Card } from './components/Card';
+import { Footer } from './components/Footer';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,6 +14,7 @@ root.render(
     <div className="container text-center">
       <Card />
     </div>
+    <Footer />
   </React.StrictMode>
 );
 
