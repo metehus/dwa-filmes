@@ -1,26 +1,25 @@
+import { Link } from 'react-router-dom'
+import { filmes } from '../../filmes'
 import './Card.css'
 
-const filmes = [{"adult":false,"backdrop_path":"/pxJbfnMIQQxCrdeLD0zQnWr6ouL.jpg","genre_ids":[28,35,53],"id":1077280,"original_language":"en","original_title":"Die Hart","overview":"Follow a fictionalized version of Kevin Hart, as he tries to become an action movie star. He attends a school run by Ron Wilcox, where he attempts to learn the ropes on how to become one of the industry's most coveted action stars.","popularity":3187.531,"poster_path":"/1EnBjTJ5utgT1OXYBZ8YwByRCzP.jpg","release_date":"2023-02-22","title":"Die Hart","video":false,"vote_average":6.3,"vote_count":135},{"adult":false,"backdrop_path":"/22z44LPkMyf5nyyXvv8qQLsbom.jpg","genre_ids":[27,9648,53],"id":631842,"original_language":"en","original_title":"Knock at the Cabin","overview":"While vacationing at a remote cabin, a young girl and her two fathers are taken hostage by four armed strangers who demand that the family make an unthinkable choice to avert the apocalypse. With limited access to the outside world, the family must decide what they believe before all is lost.","popularity":2617.181,"poster_path":"/dm06L9pxDOL9jNSK4Cb6y139rrG.jpg","release_date":"2023-02-01","title":"Knock at the Cabin","video":false,"vote_average":6.5,"vote_count":923},{"adult":false,"backdrop_path":"/xDMIl84Qo5Tsu62c9DGWhmPI67A.jpg","genre_ids":[28,12,878],"id":505642,"original_language":"en","original_title":"Black Panther: Wakanda Forever","overview":"Queen Ramonda, Shuri, M’Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T’Challa’s death.  As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for the kingdom of Wakanda.","popularity":2159.377,"poster_path":"/sv1xJUazXeYqALzczSZ3O6nkH75.jpg","release_date":"2022-11-09","title":"Black Panther: Wakanda Forever","video":false,"vote_average":7.3,"vote_count":3953},{"adult":false,"backdrop_path":"/jr8tSoJGj33XLgFBy6lmZhpGQNu.jpg","genre_ids":[16,12,35,10751],"id":315162,"original_language":"en","original_title":"Puss in Boots: The Last Wish","overview":"Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives.","popularity":2004.115,"poster_path":"/kuf6dutpsT0vSVehic3EZIqkOBt.jpg","release_date":"2022-12-07","title":"Puss in Boots: The Last Wish","video":false,"vote_average":8.4,"vote_count":4400},{"adult":false,"backdrop_path":"/AsEgGeccI32SwMBkxpwhOkhbzmF.jpg","genre_ids":[28,878,53,27],"id":1011679,"original_language":"en","original_title":"Shark Side of the Moon","overview":"Decades ago, the USSR developed unkillable sharks and launched them to the moon. Today, a team of American astronauts will endure the fight of their lives.","popularity":1849.703,"poster_path":"/v5CfpzxoJDkZxjZAizClFdlEF0U.jpg","release_date":"2022-08-12","title":"Shark Side of the Moon","video":false,"vote_average":5.3,"vote_count":68},{"adult":false,"backdrop_path":"/v2LilmCylr3bL9TCZSj6syjowZh.jpg","genre_ids":[35,18],"id":937278,"original_language":"en","original_title":"A Man Called Otto","overview":"When a lively young family moves in next door, grumpy widower Otto Anderson meets his match in a quick-witted, pregnant woman named Marisol, leading to an unlikely friendship that turns his world upside down.","popularity":1765.887,"poster_path":"/130H1gap9lFfiTF9iDrqNIkFvC9.jpg","release_date":"2022-12-28","title":"A Man Called Otto","video":false,"vote_average":7.9,"vote_count":592},{"adult":false,"backdrop_path":"/9Rq14Eyrf7Tu1xk0Pl7VcNbNh1n.jpg","genre_ids":[28,12,53],"id":646389,"original_language":"en","original_title":"Plane","overview":"After a heroic job of successfully landing his storm-damaged aircraft in a war zone, a fearless pilot finds himself between the agendas of multiple militias planning to take the plane and its passengers hostage.","popularity":1449.384,"poster_path":"/qi9r5xBgcc9KTxlOLjssEbDgO0J.jpg","release_date":"2023-01-12","title":"Plane","video":false,"vote_average":6.9,"vote_count":834},{"adult":false,"backdrop_path":"/5i6SjyDbDWqyun8klUuCxrlFbyw.jpg","genre_ids":[18,28],"id":677179,"original_language":"en","original_title":"Creed III","overview":"After dominating the boxing world, Adonis Creed has been thriving in both his career and family life. When a childhood friend and former boxing prodigy, Damien Anderson, resurfaces after serving a long sentence in prison, he is eager to prove that he deserves his shot in the ring. The face-off between former friends is more than just a fight. To settle the score, Adonis must put his future on the line to battle Damien - a fighter who has nothing to lose.","popularity":1427.727,"poster_path":"/vJU3rXSP9hwUuLeq8IpfsJShLOk.jpg","release_date":"2023-03-01","title":"Creed III","video":false,"vote_average":6.9,"vote_count":252}
-]
+
 
 export function Card() {
   return <div>
-    <div className="card">
-      <div className="container">
-        <div className="row" style={{ overflowX: 'auto'}}>
-          {
-            filmes.map(filme => <div className="col-4">
-              <div className="card">
-                <div className="card-body">
-                  <img className="card-img-top" src={`https://www.themoviedb.org/t/p/w220_and_h330_face${filme.poster_path}`} />
-                  <h5 className="card-title">{filme.title}</h5>
-                  <p className="card-text">{filme.overview}</p>
-                  <a href="#" className="btn btn-primary">Go somewhere</a>
-                </div>
+    <div className="container">
+      <div className="row" style={{ overflowX: 'auto'}}>
+        {
+          filmes.map(filme => <div className="col-4">
+            <div className="card mt-4">
+              <div className="card-body">
+                <img className="card-img-top" src={`https://www.themoviedb.org/t/p/w220_and_h330_face${filme.poster_path}`} />
+                <h5 className="card-title">{filme.title}</h5>
+                <p className="card-text">{filme.overview}</p>
+                <Link to={`/detalhes/${filme.id}`} className="btn btn-primary">Go somewhere</Link>
               </div>
-            </div>)
-          }
-        </div>
+            </div>
+          </div>)
+        }
       </div>
     </div>
   </div>

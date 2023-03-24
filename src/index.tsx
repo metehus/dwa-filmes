@@ -5,16 +5,15 @@ import './index.css';
 import App from './App';
 import { Card } from './components/Card';
 import { Footer } from './components/Footer';
+import { Title } from './components/Title';
+import { Menu } from './components/Menu';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <div className="container text-center">
-      <Card />
-    </div>
-    <Footer />
+    <App />
   </React.StrictMode>
 );
 
