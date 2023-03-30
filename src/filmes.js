@@ -1,3 +1,7 @@
+export const getImageUrl = (path) => `https://www.themoviedb.org/t/p/w220_and_h330_face${path}`
+
+export const seenMovies = [505642, 315162]
+
 export const filmes = [
   {
     adult: false,
