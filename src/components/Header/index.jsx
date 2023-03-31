@@ -1,5 +1,4 @@
 import { Box, Container, Flex, Text, useColorMode } from "@chakra-ui/react";
-import "./header.css";
 import { HeaderLink } from "./HeaderLink";
 
 export default function Header() {

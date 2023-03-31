@@ -1,5 +1,4 @@
 import { Flex, Text } from "@chakra-ui/react";
-import "./title.css";
 
 export default function Title({children, text}) {
     return (

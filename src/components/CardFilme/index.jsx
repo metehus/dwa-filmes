@@ -1,4 +1,3 @@
-import "./card.css";
 import { getImageUrl, seenMovies } from "../../filmes";
 import { Button, Card, CardBody, Flex, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
