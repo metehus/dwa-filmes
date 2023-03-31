@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from './../components/Title/index';
+import Title from '../components/Title/index';
 import { Button, Card, CardBody, Container, Flex, Grid, GridItem, Text } from '@chakra-ui/react';
 
 function Planos() {
