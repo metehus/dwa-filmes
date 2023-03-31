@@ -1,10 +1,8 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import Title from '../components/Title/index';
 import { Card, CardBody, Container, Grid, GridItem } from '@chakra-ui/react';
 
 function Sobre() {
-  const { name } = useParams();
 
   return (
     <Container maxW="container.xl">

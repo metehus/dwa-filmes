@@ -1,6 +1,5 @@
 import "./card.css";
-import Comments from '../Comments/index';
-import { filmes, getImageUrl, seenMovies } from "../../filmes";
+import { getImageUrl, seenMovies } from "../../filmes";
 import { Button, Card, CardBody, Flex, Image, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { Assistido } from "./Assistido";

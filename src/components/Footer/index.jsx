@@ -1,5 +1,4 @@
 import { Box, Container, Flex, Text } from "@chakra-ui/react";
-import { useLocation } from 'react-router-dom';
 
 export default function Footer() {
     return (
