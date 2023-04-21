@@ -1,5 +1,6 @@
-import { Box, Container, Flex, Text, useColorMode } from "@chakra-ui/react";
+import { Button, Box, Container, Flex, Text, useColorMode } from "@chakra-ui/react";
 import { HeaderLink } from "./HeaderLink";
+import { Link } from "react-router-dom";
 
 export default function Header() {
 
@@ -14,7 +15,10 @@ export default function Header() {
           <HeaderLink to="/">Início</HeaderLink>
           <HeaderLink to="/planos">Planos</HeaderLink>
           <HeaderLink to="/sobre">Sobre</HeaderLink>
+          <Button as={Link} to={`/login`} mt={0} colorScheme='gray'>Login</Button>
+          <Button as={Link} to={`/cadastrar`} mt={0} colorScheme='gray'>Cadastrar</Button>
         </Flex>
+          
       </Container>
     </Box>
   )
