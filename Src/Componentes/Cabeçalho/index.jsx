@@ -14,6 +14,8 @@ export default function Header() {
           <HeaderLink to="/">Início</HeaderLink>
           <HeaderLink to="/planos">Planos</HeaderLink>
           <HeaderLink to="/sobre">Sobre</HeaderLink>
+          <Button as={Link} to={`/login`} mt={0} colorScheme='gray'>Login</Button>
+          <Button as={Link} to={`/cadastrar`} mt={0} colorScheme='gray'>Cadastrar</Button>
         </Flex>
       </Container>
     </Box>
