@@ -1,6 +1,10 @@
-export function Assistido({ seen }) {
-  if (seen) {
-    return <p>Assistido ✔</p>;
-  }
-  return <p className="item">Não assistido</p>;
+import { Button } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+
+export function Assistido({ seen, id }) {
+  return <Button as={Link} to={`/detalhes/${id}`} mt={5} colorScheme='purple'>
+    {
+      seen ? 'Assistir' : 'Assistir novamente'
+    }
+  </Button>
 }
