@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from '../components/Title/index';
 import CardFilme from '../components/CardFilme/index';
-import { Box, Select, Container, Flex, Input, SimpleGrid, Text, Center } from '@chakra-ui/react';
+import { Select, Container, Flex, Input, SimpleGrid, Text, Center } from '@chakra-ui/react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { getMovies } from '../filmes';

@@ -23,7 +23,7 @@ function Detalhes() {
       .then(movies => {
         setNota(movies.find(m => m.id === parseInt(filmeId))?.nota)
       })
-  }, [])
+  }, [filmeId])
 
 
 
