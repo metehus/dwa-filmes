@@ -5,4 +5,5 @@ Disponível em https://chuu-filmes.matehus.dev ou https://main--chuu-filmes.netl
 # Integrantes:
 
 Matheus Batista Sanches
+<br/>
 Luiz Gabriel Wojtovicz
